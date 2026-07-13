@@ -26,13 +26,17 @@ topBtn.onclick = function () {
 
 };
 
-const menuToggle = document.getElementById("menu-toggle");
+document.addEventListener("DOMContentLoaded", function () {
 
-const navLinks = document.getElementById("nav-links");
+    const menuToggle = document.getElementById("menu-toggle");
+
+    const navLinks = document.getElementById("nav-links");
 
 
-menuToggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click", function () {
 
-    navLinks.classList.toggle("active");
+        navLinks.classList.toggle("active");
+
+    });
 
 });
