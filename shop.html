@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"href="responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
@@ -37,38 +37,90 @@
             <li><a href="shop.html">Shop</a></li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">👤 My Account</a></li>
         </ul>
+        <div class="user-menu" id="user-menu">
+
+    <a href="login.html" id="login-link">Login</a>
+
+    <a href="signup.html" id="signup-link">Sign Up</a>
+
+    <a href="account.html" id="account-link" style="display:none;">
+        My Account
+    </a>
+
+    <a href="#" id="logout-link" style="display:none;">
+        Logout
+    </a>
+
+</div>
     </nav>
-
-</nav>
-
+ 
 <section class="shop">
 
     <h1>Our Crochet Collection</h1>
-
 
     <div class="product-container">
 
 
         <div class="product-card">
 
+            <span class="badge">POPULAR</span>
+
             <img src="images/dress1.jpg" alt="Crochet Dress">
 
             <h3>Handmade Crochet Dress</h3>
 
-            <p>Beautiful custom crochet dresses made to your style.</p>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Beautiful custom crochet dresses made to your style.
+            </p>
+
+            <h4>₦35,000</h4>
+
+            <a 
+            href="https://wa.me/2347077562845?text=Hello%20Favy's%20Crochet%20Studio,%20I%20would%20like%20to%20order%20a%20Crochet%20Dress."
+            class="order-btn"
+            target="_blank">
+
+            Order Now
+
+            </a>
 
         </div>
 
 
 
         <div class="product-card">
+
+            <span class="badge">NEW</span>
 
             <img src="images/top1.jpg" alt="Crochet Top">
 
             <h3>Crochet Tops</h3>
 
-            <p>Stylish tops perfect for casual and special occasions.</p>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Stylish tops perfect for casual and special occasions.
+            </p>
+
+            <h4>₦20,000</h4>
+
+
+            <a 
+            href="https://wa.me/2347077562845?text=Hello%20Favy's%20Crochet%20Studio,%20I%20would%20like%20to%20order%20a%20Crochet%20Top."
+            class="order-btn"
+            target="_blank">
+
+            Order Now
+
+            </a>
 
         </div>
 
@@ -76,45 +128,98 @@
 
 
         <div class="product-card">
+
+            <span class="badge">HANDMADE</span>
 
             <img src="images/bag1.jpg" alt="Crochet Bag">
 
             <h3>Crochet Bags</h3>
 
-            <p>Unique handmade bags with beautiful designs.</p>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Unique handmade bags with beautiful designs.
+            </p>
+
+            <h4>₦20,000</h4>
+
+            <a 
+            href="https://wa.me/2347077562845?text=Hello%20Favy's%20Crochet%20Studio,%20I%20would%20like%20to%20order%20a%20Crochet%20Bag."
+            class="order-btn"
+            target="_blank">
+
+            Order Now
+
+            </a>
 
         </div>
 
 
 
-
         <div class="product-card">
+
+            <span class="badge">PREMIUM</span>
 
             <img src="images/cardigan1.jpg" alt="Crochet Cardigan">
 
             <h3>Crochet Cardigans</h3>
 
-            <p>Comfortable handmade cardigans for every season.</p>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Comfortable handmade cardigans for every season.
+            </p>
+
+            <h4>₦30,000</h4>
+
+            <a 
+            href="https://wa.me/2347077562845?text=Hello%20Favy's%20Crochet%20Studio,%20I%20would%20like%20to%20order%20a%20Crochet%20Cardigan."
+            class="order-btn"
+            target="_blank">
+
+            Order Now
+
+            </a>
 
         </div>
-
 
 
 
         <div class="product-card">
 
+            <span class="badge">GIFT</span>
+
             <img src="images/keychain1.jpg" alt="Crochet Keychain">
 
             <h3>Crochet Keychains</h3>
 
-            <p>Small handmade accessories and gifts.</p>
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Small handmade accessories and gifts.
+            </p>
+
+            <h4>₦1,500</h4>
+
+            <a 
+            href="https://wa.me/2347077562845?text=Hello%20Favy's%20Crochet%20Studio,%20I%20would%20like%20to%20order%20a%20Crochet%20Keychain."
+            class="order-btn"
+            target="_blank">
+
+            Order Now
+
+            </a>
 
         </div>
 
 
-
     </div>
-
 
 </section>
 
@@ -149,5 +254,6 @@
 </a>
 <button id="topBtn">↑</button>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+<script type="module" src="js/nav-auth.js"></script>
 </html>
