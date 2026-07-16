@@ -34,22 +34,44 @@
             <li><a href="shop.html">Shop</a></li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="account.html">👤 My Account</a></li>
+           
         </ul>
 
         <div class="user-menu" id="user-menu">
 
-    <a href="login.html" id="login-link">Login</a>
-
-    <a href="signup.html" id="signup-link">Sign Up</a>
-
-    <a href="account.html" id="account-link" style="display:none;">
-        My Account
+    <a href="login.html" id="login-link">
+        Login
     </a>
 
-    <a href="#" id="logout-link" style="display:none;">
-        Logout
+    <a href="signup.html" id="signup-link">
+        Sign Up
     </a>
+
+  <div class="account-dropdown" id="accountDropdown">
+
+    <a href="#" id="account-link">
+        👤 My Account ▼
+    </a>
+
+
+    <div class="dropdown-menu" id="dropdownMenu">
+
+        <a href="account.html">
+            My Profile
+        </a>
+
+        <a href="orders.html">
+            My Orders
+        </a>
+
+        <a href="#" id="logout-link">
+            Logout
+        </a>
+
+    </div>
+
+</div>
+    </div>
 
 </div>
     </nav>
@@ -246,14 +268,11 @@
         Have a special design in mind?
         Tell us what you would love us to create for you.
     </p>
-    <form 
-    class="order-form"
-    action="https://formspree.io/f/xrengygw"
-    method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-        <select name="product-type">
+   <form class="order-form" id="orderForm">
+        <input type="text" id="customerName" placeholder="Your Name" required>
+        <input type="email" id="customerEmail" placeholder="Your Email" required>
+        <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+        <select id="productType">
             <option>Select Product Type</option>
             <option>Crochet Dress</option>
             <option>Crochet Top</option>
@@ -265,9 +284,9 @@
         </select>
 
 
-        <input type="text"  name="colour" placeholder="Preferred Colour">
-        <textarea name="design-details" placeholder="Describe the design you want (style, pattern, length, sleeves, special details, etc.)"></textarea>
-        <textarea name="size-details" placeholder="Tell us your size/measurements and any other details"></textarea>
+        <input type="text" id="colour" placeholder="Preferred Colour">
+        <textarea id="designDetails" placeholder="Describe the design you want (style, pattern, length, sleeves, special details, etc.)"></textarea>
+        <textarea id="sizeDetails" placeholder="Tell us your size/measurements and any other details"></textarea>
         <button type="submit">
             Send Order Request
         </button>
@@ -304,5 +323,6 @@
 <button id="topBtn">↑</button>
 <script src="js/script.js"></script>
 <script type="module" src="js/nav-auth.js"></script>
+<script type="module" src="js/order.js"></script>
     </body>
 </html>

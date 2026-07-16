@@ -984,3 +984,142 @@ background:#d8d9dd;
 .user-menu a:hover{
     color:#d8dae0;
 }
+.account-dropdown {
+    position: relative;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+
+    background: white;
+
+    width: 180px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    z-index: 9999;
+}
+
+
+.dropdown-menu a,
+.dropdown-menu button {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 12px;
+
+    color: black;
+
+    text-decoration: none;
+
+    border: none;
+
+    background: white;
+
+    cursor: pointer;
+
+    text-align: left;
+}
+
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+
+    background: #f0f0f0;
+
+}
+
+
+.account-dropdown.active .dropdown-menu {
+
+    display: block !important;
+
+}
+.account-dropdown {
+    position: relative;
+}
+
+
+.dropdown-menu {
+
+    display: none;
+
+    position: absolute;
+
+    top: 35px;
+
+    right: 0;
+
+    background: white;
+
+    width: 170px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    z-index: 9999;
+}
+
+
+.dropdown-menu a {
+
+    display: block;
+
+    padding: 10px;
+
+    color: black;
+
+    text-decoration: none;
+
+}
+
+
+.dropdown-menu a:hover {
+
+    background: #f2f2f2;
+
+}
+
+
+.account-dropdown.active .dropdown-menu {
+
+    display: block;
+
+}
+.orders-section {
+
+padding: 50px;
+
+text-align:center;
+
+}
+
+
+.order-card {
+
+background:white;
+
+padding:20px;
+
+margin:20px auto;
+
+max-width:400px;
+
+border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}

@@ -39,7 +39,6 @@
             <li><a href="shop.html">Shop</a></li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">👤 My Account</a></li>
         </ul>
         <div class="user-menu" id="user-menu">
 
@@ -47,14 +46,30 @@
 
     <a href="signup.html" id="signup-link">Sign Up</a>
 
-    <a href="account.html" id="account-link" style="display:none;">
-        My Account
+ <div class="account-dropdown" id="accountDropdown">
+
+    <a href="#" id="account-link">
+        👤 My Account ▼
     </a>
 
-    <a href="#" id="logout-link" style="display:none;">
-        Logout
-    </a>
 
+    <div class="dropdown-menu" id="dropdownMenu">
+
+        <a href="account.html">
+            My Profile
+        </a>
+
+        <a href="orders.html">
+            My Orders
+        </a>
+
+        <a href="#" id="logout-link">
+            Logout
+        </a>
+
+    </div>
+
+</div>
 </div>
     </nav>
 

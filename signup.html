@@ -31,9 +31,10 @@
     <ul class="nav-links">
 
         <li><a href="index.html">Home</a></li>
-
+        <li><a href="about.html">About</a></li>
         <li><a href="shop.html">Shop</a></li>
-
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="login.html">Login</a></li>
 
     </ul>
@@ -43,34 +44,43 @@
 
     <a href="signup.html" id="signup-link">Sign Up</a>
 
-    <a href="account.html" id="account-link" style="display:none;">
-        My Account
+ <div class="account-dropdown" id="accountDropdown">
+
+    <a href="#" id="account-link">
+        👤 My Account ▼
     </a>
 
-    <a href="#" id="logout-link" style="display:none;">
-        Logout
-    </a>
+
+    <div class="dropdown-menu" id="dropdownMenu">
+
+        <a href="account.html">
+            My Profile
+        </a>
+
+        <a href="orders.html">
+            My Orders
+        </a>
+
+        <a href="#" id="logout-link">
+            Logout
+        </a>
+
+    </div>
 
 </div>
 
+</div>
 </nav>
-
-
 
 <section class="account-section">
 
-
 <h1>Create Your Account</h1>
-
 
 <p>
 Join Favy's Crochet Studio and enjoy a smoother shopping experience.
 </p>
 
-
-
 <form class="account-form" id="signup-form">
-
 
 <input
 type="text"

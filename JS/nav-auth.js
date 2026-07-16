@@ -1,9 +1,14 @@
-import { auth } from "./firebase.js";
+import { auth, db } from "./firebase.js";
 
 import {
     onAuthStateChanged,
     signOut
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+import {
+    doc,
+    getDoc
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 
 const loginLink = document.getElementById("login-link");
@@ -12,7 +17,7 @@ const accountLink = document.getElementById("account-link");
 const logoutLink = document.getElementById("logout-link");
 
 
-onAuthStateChanged(auth, (user) => {
+onAuthStateChanged(auth, async (user) => {
 
     if (user) {
 
@@ -22,7 +27,20 @@ onAuthStateChanged(auth, (user) => {
         accountLink.style.display = "inline-block";
         logoutLink.style.display = "inline-block";
 
-        accountLink.innerHTML = `👋 ${user.email}`;
+        const docRef = doc(db, "users", user.uid);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+
+            const data = docSnap.data();
+
+            accountLink.innerHTML = `👋 Welcome, ${data.fullName}`;
+
+        } else {
+
+            accountLink.innerHTML = "👤 My Account";
+
+        }
 
     } else {
 
@@ -46,5 +64,17 @@ logoutLink.addEventListener("click", (e) => {
         window.location.href = "index.html";
 
     });
+
+});
+
+const accountBtn = document.getElementById("accountBtn");
+const accountDropdown = document.getElementById("accountDropdown");
+
+
+accountLink?.addEventListener("click", (e)=>{
+
+    e.preventDefault();
+
+    accountDropdown.classList.toggle("active");
 
 });
